@@ -1,8 +1,6 @@
-# Alchemy React Base Template
+# Build From Scratch #4: Compendium
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Use this template for all your "from scratch" deliverables. To start, simply run
+To start, simply run
 
 - `npm install`
 - `npm start`
