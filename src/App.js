@@ -8,12 +8,16 @@ function App() {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState([]);
   const [query, setQuery] = useState('');
-  const [sort, setSort] = useState('arc');
+  const [sort, setSort] = useState('asc');
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await getPokemon(query, sort);
       setPokemon(data.results);
+
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
     };
 
     if (loading) {
