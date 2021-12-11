@@ -15,18 +15,18 @@
     - Use the Alchemy Pokemon API in the example of these features
     - Use React template to start project.
 ### Acceptance Criteria
-    [ ] Users should be able to see a list of at least 10 characters when the page loads
+    [x] Users should be able to see a list of at least 10 characters when the page loads
     [ ] Users should see 5 character details on each character
     [ ] Users should be able to filter data from the api (Can use any type of filter from the api)
-    [ ] Users should be able to sort the data retrieved from the api
+    [x] Users should be able to sort the data retrieved from the api
 ### Rubric
-    [ ] See a loading state while data is being fetched on page load	2
-    [ ] See a list of characters when the page loads	2
+    [x] See a loading state while data is being fetched on page load	2
+    [x] See a list of characters when the page loads	2
     [ ] Filter the data retrieved	2
     [ ] Conditionally render a loading state	2
     [ ] Make an api request with fetch and useEffect when page loads	2
     [ ] Add a key to each item rendered from data fetched	2
-    [ ] Update state with useEffect using empty dependency array	2
-    [ ] Update state with useEffect conditionally using dependency array	2
+    [x] Update state with useEffect using empty dependency array	2
+    [x] Update state with useEffect conditionally using dependency array	2
     [ ] Snapshot testing	2
-    [ ] Deployed on Netlify with passing CI	2
+    [x] Deployed on Netlify with passing CI	2
