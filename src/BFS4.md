@@ -43,4 +43,4 @@
 ### Needs to be Completed:
 
 - [x] write test for Controls component -- test passing 01/19 1:18pm
-- [ ] write test for App.js
+- [x] write test for App.js - test passing 01/19 2:00pm
