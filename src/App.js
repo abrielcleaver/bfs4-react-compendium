@@ -1,8 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getPokemon } from './services/pokemon';
-import Pokedex from './components/Pokedex/Pokedex';
-import Controls from './components/Controls/Controls';
+import Pokedex from './components/pokedex/pokedex';
+import Controls from './components/controls/controls';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
