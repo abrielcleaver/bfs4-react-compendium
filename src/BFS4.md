@@ -1,7 +1,8 @@
 # Compendium (BFS4)
     - Due Dec 10, 2021
-    - Netlify link ->  
+    - Netlify link -> https://abriels-compendium.netlify.app/
 # Learning Objectives
+
     - Use the useEffect hook to fetch external data
     - Use .map to iterate over an array and render new elements for each item in an array.
     - Add a unique key to each element rendered from a .map in React.
@@ -30,3 +31,8 @@
     [x] Update state with useEffect conditionally using dependency array	2
     [ ] Snapshot testing	2
     [x] Deployed on Netlify with passing CI	2
+
+
+### Needs to be Completed:
+- [x] write test for Controls component -- test passing 01/19 1:18pm
+- [ ] write test for App.js
