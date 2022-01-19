@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { getPokemon } from './services/pokemon';
-import Controls from './components/controls/controls';
+import Controls from './components/Controls/Controls';
 import Pokedex from './components/pokedex/pokedex';
 
 function App() {
@@ -14,39 +14,23 @@ function App() {
     const fetchData = async () => {
       const data = await getPokemon(query, sort);
       setPokemon(data.results);
-
-      setTimeout(() => {
-        setLoading(false);
-      }, 1000);
+      setLoading(false);
     };
-    // because loading is in the dependency array
-    // this useEffect will be called whenever loading changes
-    // we only want to load new data when loading is true
-    // wrap the call to fetchData in a conditional
-    if (loading) {
-      fetchData();
-    }
-    // react requires query also be in the dependency array
-    // whenever loading or query change, react will call the callback
-    // but will only fetch the data when loading is true
+    fetchData();
   }, [loading, query, sort]);
-
+  if (loading) return <h1>Loading... please wait</h1>;
   return (
     <div className="App">
       <h1>Pokedex</h1>
-      {loading && <span className="loading"></span>}
-      {!loading && (
-        <>
-          <Controls
-            query={query}
-            setQuery={setQuery}
-            setLoading={setLoading}
-            sort={sort}
-            setSort={setSort}
-          />
-          <Pokedex pokemon={pokemon} />
-        </>
-      )}
+
+      <Controls
+        query={query}
+        setQuery={setQuery}
+        setLoading={setLoading}
+        sort={sort}
+        setSort={setSort}
+      />
+      <Pokedex pokemon={pokemon} />
     </div>
   );
 }
