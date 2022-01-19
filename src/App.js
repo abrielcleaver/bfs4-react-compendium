@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import { getPokemon } from './services/pokemon';
 import Controls from './components/Controls/Controls';
-import Pokedex from './components/pokedex/pokedex';
+import Pokedex from './components/Pokedex/Pokedex';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
