@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test.skip('renders learn react link', () => {
+test('renders loading message', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const loadingMessage = screen.getByText(/Loading... please wait/i);
+  expect(loadingMessage).toBeInTheDocument();
 });
